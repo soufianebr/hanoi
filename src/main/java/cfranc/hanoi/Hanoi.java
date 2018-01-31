@@ -7,7 +7,13 @@ public class Hanoi {
 	Tour tourDest;
 
 	public Hanoi(int n){
-		// TODO ...
+		this.tourInit = new Tour(n);
+		this.tourInter = new Tour(n);
+		this.tourDest = new Tour(n);
+
+		for (int i = n; i > 0; i--) {
+			Disque disque = new Disque(i);
+		}
 	}
 
 	
